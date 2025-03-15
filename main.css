@@ -1,0 +1,751 @@
+/* Base rem unit (16px) */
+html, body {margin:0; border:0; padding:0;
+  font-size: 16px; /* 1rem = 16px */
+  scroll-behavior: smooth;
+}
+.home{
+    width: 100%;
+}
+/* Default styles for desktop */
+body {
+    font-family: Tahoma, sans-serif;
+    background-color:#ffffff;
+    font-size: 1rem; /* 16px (base size) */
+    display: flow-root;
+}
+
+
+
+/* ------------Format for links------------ */
+/* unvisited link */
+.link-style:link {
+  color: #000000; /* Black */
+  text-decoration: none;
+  font-style: italic;
+  font-family:Helvetica, Arial, sans-serif; 
+  font-size: 1.125rem; /* 18px */
+}
+/* visited link */
+.link-style:visited {
+  color: #000000;
+  text-decoration: none;
+} 
+/* mouse over link */
+.link-style:hover {
+  text-decoration: underline;
+}
+/* selected link */
+.link-style:active {
+  text-decoration: underline;
+}
+
+/*----Reference page links----*/
+.reference_link_style:link{
+  color: #000000; 
+  text-decoration: none;
+  font-style: italic;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.125rem; /* 18px */
+}
+/* visited link */
+.reference_link_style:visited {
+  color: #000000;
+  text-decoration: none;
+} 
+/* mouse over link */
+.reference_link_style:hover {
+  text-decoration: underline;
+}
+/* selected link */
+.reference_link_style:active {
+  text-decoration: underline;
+}
+.contact_link-style:link{
+  color: #ffffff; 
+  font-family:Helvetica, Arial, sans-serif; 
+  font-style: italic;
+  font-size: 1.125rem; /* 18px */
+  text-decoration: none;
+}
+/* visited link */
+.contact_link-style:visited {
+  color: #ffffff;
+  text-decoration: none;
+} 
+/* mouse over link */
+.contact_link-style:hover {
+  text-decoration: underline;
+}
+/* selected link */
+.contact_link-style:active {
+  text-decoration: underline;
+}
+
+/*----End of Reference page links----*/
+/* ------------End of link format------------ */
+
+
+
+/* ------------Navigation Bar styles------------ */
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #121212;
+  padding: 10px 20px;
+  margin: auto; 
+  width: 100%; 
+  box-sizing: border-box;
+  position: fixed;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+/* Dim- Refer to scripts/navScroll.js */
+.navbar.dimmed {
+  opacity: 0.7; 
+}
+/* Brighten when hovered - Refer to scripts/navScroll.js */
+.navbar.dimmed:hover {
+  opacity: 1; 
+}
+.nav1 {
+  display: flex; /* Show links - default */
+  flex-direction: row;
+  gap: 20px;
+}
+.nav1 ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+.nav1 li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+/* Right-side Icons */
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+header .search-icon img,
+header .burger-menu img {
+  height: 25px;
+  cursor: pointer;
+}
+/* Hide Navigation for Small Screens */
+header .nav1 {
+  display: none; /* Hide links on small screen */
+}
+/* Burger Menu */
+header .burger-menu {
+  display: none; /* Hide burger menu on large screen */
+  cursor: pointer;
+}
+header .logo {
+  margin-right: 20px; 
+}
+header .search-icon {
+  margin-left: 20px; 
+}
+.collapsible-menu {
+  flex-grow: 1; 
+  text-align: center;
+}
+.logo img {
+    width: 40px;
+    height: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.search-icon img {
+  height: 25px;
+  cursor: pointer;
+}
+nav.nav1{
+    background-color: #121212;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size:80%;
+    padding-left:10%; 
+    padding-right:10%; 
+}
+nav.nav1 ul {list-style: none; width: 90%; padding:1%; margin:0; } 
+nav.nav1 li {display:inline;}
+nav.nav1 a {color: #ffffff; text-decoration:none; text-align: center; padding: 1%;}
+nav.nav1 li:last-of-type {border-right: 0px;}
+nav.nav1 a:hover {color: #005eb8; /* Blue */ text-decoration: underline;}
+input#menu, label[for="menu"] {display: none;}
+/* ------------End of navigation bar styles------------ */
+
+
+
+/* ------------Home page styles------------ */
+.hero img{
+  max-width: 100%;
+  width: 1920px;
+  height: 700px;
+}
+.hero_text{
+  margin-bottom: 80px;
+  margin-top: 80px;
+  margin-left: auto; /* Automatically adjust left margin */
+  margin-right: auto; /* Automatically adjust right margin */
+  text-align: left; /* Center text content */
+  width: 80%; /* Use percentage-based width */
+  max-width: 1200px; /* Limit maximum width for readability */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+.hero_text h1{
+  margin-top: 80px;
+  transition: font-size 0.3s ease-in-out;
+}
+.hero_text h2{
+  margin-top: 12px;
+  transition: font-size 0.3s ease-in-out;
+} 
+/* ------------End of home page styles------------ */
+
+
+
+/* ------------Styles------------ */
+.navigation-item {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem; /* 18px */
+}
+/*Heading*/
+h1{
+  font-family:Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2.1875rem; /* 35px */
+  transition: font-size 0.3s ease-in-out;
+}
+/*Subheading*/
+h2{
+  font-family:Helvetica, Arial, sans-serif;
+  font-weight: 600; /* Semi-bold */
+  font-size: 1.875rem; /* 30px */
+  transition: font-size 0.3s ease-in-out;
+}
+.content_body_text{
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.125rem; /* 18px */
+  margin-top: 21px;
+  line-height: 150%;
+} 
+/* ------------ End of Styles------------ */
+
+
+
+/* ------------Content page styles------------ */
+.content {
+  max-width: 1527.618px; /* Ensure content aligns with this width */
+  margin: 0 auto; /* Center the content */
+  padding: 16px; /* Add padding for better spacing */
+}
+/* Top Page Section */
+.top_page {
+  text-align: left;
+  margin-bottom: 32px;
+  padding-top: 40px; /* Add spacing between the navbar and the top page */
+}
+.top_page h1 {
+  margin-bottom: 8px;
+}
+.top_page h2 {
+  margin-bottom: 16px;
+}
+.divider-1 {
+  border-top: 1px solid #000000;
+  margin: 20px 0;
+  width: 100%; /* Full-width divider - desktop */
+  transition: width 0.3s ease; /* Smooth transition when resizing */
+}
+/* Main Content Layout */
+.pageMain {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 16px; /* Add space between articles */
+}
+.info {
+  display: flex;
+  flex-direction: row; /* image and text side-by-side - desktop */
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1 1 100%; /* initial - full width */
+  max-width: 100%;
+  margin-bottom: 3.75rem; /* Increase space between each article */
+  justify-content: space-between; 
+  gap: 3.75rem; /* space between image and text */
+}
+.image {
+  flex: 0 0 40%; /* Image takes 40% of the article's width */
+  max-width: 40%;
+}
+.image img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+.text-container {
+  flex: 1; /* Text takes the remaining space */
+  padding: 16px;
+}
+.text-container p{
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.125rem;
+  margin-top: 21px;
+  line-height: 150%;
+} 
+/* Alternate layouts for even and odd articles */
+article:nth-child(even) {
+  flex-direction: row-reverse; /* Reverse the layout for even articles */
+}
+article:nth-child(odd) {
+  flex-direction: row; /* Default layout for odd articles */
+}
+.text-container audio{
+  float: right;
+  margin-left: 147px;
+  margin-top: 21px;
+}
+/* ------------End of content page styles------------ */
+
+
+
+/* ------------Reference page styles------------ */
+.reference_main {
+  padding-top: 60px; 
+  margin: clamp(30px, 5vw, 80px) clamp(20px, 10vw, 195px);
+}
+.divider-1 {
+  border-top: 1px solid #000000; 
+  margin: 20px 0;
+  width: 100%; 
+  transition: width 0.3s ease; 
+}
+.reference_body {
+  margin-top: 21px;
+  line-height: 2em;
+  font-family: Tahoma, Verdana, Segoe, sans-serif; 
+  font-size: clamp(16px, 1.5vw, 18px); /* Smoothly adjusts font size */
+}
+.reference_body_text {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-top: clamp(15px, 3vw, 21px); /* Adjust spacing between items */
+}
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+  list-style: none;
+}
+/* ------------End of reference page styles------------ */
+
+
+
+/* ------------Styles for contact us page------------ */
+span.required{
+  color: red;
+}
+.contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #ffffff;
+  margin: 2rem auto;
+  width: 80%;
+  border-radius: 8px;
+}
+.contact_us{
+  background-color: #000080;
+  color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 8px;
+  flex: 1;
+}
+.contact_us h2 {
+  margin-top: 0;
+}
+.contact_us p {
+  margin: 1rem 0;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.125rem; /* 18px */
+}
+.contact_us a {
+  margin-right: 0.5rem;
+}
+.contact_us img{
+  width: 50px;
+  height: 50px;
+}
+.contact_form{
+  font-size: 1.1125rem;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+/* ------------Format for contact-us-form------------ */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 0.875rem;
+    }
+    input[type=submit] {
+    background-color: #000080; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.1125rem;
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    }
+    input[type=submit]:hover {
+    background-color: #45a049;
+    }
+    .contact-us-form {
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        padding: 20px;
+    }
+/* ------------End of format for contact-us-form------------ */
+/* ------------End of styles for contact us page------------ */
+
+
+
+/* ------------Styles for footer------------ */
+  .footer {
+    background-color: #F5F1E9; /* Soft beige*/
+    color: #000000;
+    padding: 30px;
+    text-align: left;
+  }
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  .footer p, .footer ul {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer li {
+    margin-bottom: 5px;
+  }
+  .social-icons, .app-icons {
+    display: flex;
+    gap: 12px;
+  }
+  .social-icons a, .app-icons a {
+    display: inline-block;
+  }
+  .social-icons img{
+    width: 50px;
+    height: 50px;
+    margin-top: 12px; 
+  }
+  .app-icons img{
+    width: 50px;
+    height: 50px;
+    margin-top: 12px; 
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    margin: 20px 0;
+  }
+/* ------------End of styles for footer------------ */
+/* ------------END OF MAIN STYLING------------ */
+
+
+
+/* ------------------------ */
+/* ------------Media Query Overide Mobile------------ */
+/*------------Media Query Overide Mobile------------ */
+@media only screen and (max-width:599px){
+
+html {
+  font-size: 100%; 
+}
+header {background-color: #121212;}
+header .burger-menu {
+  display: block; 
+}
+@keyframes dropDown {
+  from {top: -100%;}
+  to {top: 0;}
+}
+@keyframes slideUp {
+  from {top: 0;}
+  to {top: -100%;}
+}
+.nav1{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #121212; 
+  z-index: 999; /* So it stays above other elements */
+  padding: 20px; 
+  transition: top 0.8s ease-in-out; 
+}
+.nav1.active {
+  display: flex;
+  animation: dropDown 0.8s ease forwards; /* Drop-down animation */ 
+}
+.nav1.closing {
+  animation: slideUp 0.8s ease forwards; /* Slide-up animation */
+}
+.nav1 ul {
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav1 li {
+  margin: 15px 0; 
+}
+.nav1 a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.5rem; /* 24 px */
+  font-weight: bold;
+  padding: 10px; 
+  display: block;
+}
+.burger-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  z-index: 1000; 
+  cursor: pointer;
+}
+.search-icon {
+  position: absolute;
+  top: 20px; 
+  right: 55px; 
+}
+.hero img{ 
+  max-width: 100%;
+  object-fit: cover;
+  margin: auto; 
+  display: block; 
+}
+.hero_text{
+  margin-left: 10%; 
+  margin-right: 10%; 
+  margin-bottom: 40px; 
+  margin-top: 40px; 
+  text-align: left; 
+  width: 100%; 
+  transition: all 0.3s ease-in-out; 
+}
+.logo img {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+article img {width:100%; padding-right:0; }
+.navigation-item {
+  font-size: 1rem; /* 16px */
+}     
+h1 {
+  font-size: 1.3125rem; /* 21px */
+}      
+h2 {
+  font-size: 1.125rem; /* 18px */
+}      
+.body {
+  font-size: 0.875rem; /* 16px */
+}
+.info,
+.info:nth-child(even),
+.info:nth-child(odd) {
+  flex-direction: column;
+}      
+.info{
+  gap: 2rem; 
+}
+.image {
+  max-width: 100%;
+}    
+.image img {
+  width: 100%;
+}     
+.top_page {
+  padding-top: 40px; 
+}     
+.text-container {
+  padding: 12px;
+}         
+.top_page {
+  margin: 20px 10px;
+}
+.reference_main {
+  margin: 20px 10px;
+}     
+.reference_body {
+  line-height: 1.8em; 
+}
+.divider-1 {
+  width: 100%; 
+}      
+.reference_body_text {
+  font-size: 0.875rem; 
+  margin-top: 15px; 
+}
+ul {
+  list-style: none; 
+  padding-left: 0;
+} 
+.link-style:link {
+  font-size: 1rem; /* 16px */
+}
+.reference_link_style:link{
+  font-size: 1rem; /* 16px */
+}
+.contact_link-style:link{
+  font-size: 1rem; /* 16px */
+}
+.contact_form{
+  font-size: 1rem;
+}
+.contact_us img{
+  width: 32px;
+  height: 32px;
+}
+.social-icons img{
+  width: 32px;
+  height: 32px;
+  margin-top: 0px; 
+}
+.app-icons img{
+  width: 32px;
+  height: 32px;
+  margin-top: 0px; 
+}     
+}
+
+/* overrides css for mobile views up to 599px wide */
+/* ------------END OF MOBILE OVERIDE STYLING------------ */
+/* */
+/* ------------Media Query Overide Tablet------------ */
+/* ------------Media Query Overide Tablet------------ */
+@media only screen and (min-width:600px) and (max-width:1199px)
+{
+header{background-color: #121212;} 
+h1{
+  font-size: 1.3125rem; 
+}
+h2{
+  font-size: 1.125rem; 
+}
+.body{
+  font-size: 1rem; 
+}
+.image {
+  max-width: 100%; 
+}
+.image img {
+  width: 100%;
+}
+.text-container {
+  padding: 16px;
+}
+.top_page {
+  margin: 40px 80px; 
+}
+.divider-1 {
+  width: 100%; 
+}
+.reference_main {
+  margin: 40px 80px;
+}
+.reference_body {
+  font-size: 1rem;
+  line-height: 1.8em; 
+  margin-top: 18px;
+  font-size: 1rem; 
+  margin-top: 18px;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+} 
+.link-style:link {
+  font-size: 1rem; /* 16px */
+}
+/*----Reference page links----*/
+.reference_link_style:link{
+  font-size: 1rem; /* 16px */
+}
+.contact_link-style:link{
+  font-size: 1rem; /* 16px */
+}
+.contact_form{
+  font-size: 1rem;
+}
+.contact_us img{
+  width: 42px;
+  height: 42px;
+}
+.social-icons img{
+  width: 42px;
+  height: 42px;
+  margin-top: 6px; 
+}
+.app-icons img{
+  width: 42px;
+  height: 42px;
+  margin-top: 6px; 
+}
+}
+
+/* overrides css for tablet/small desktop views between 600px and
+1199px wide */
+/* ------------END OF TABLET OVERIDE MAIN STYLING------------ */
+
+@media (min-width: 599px) {
+  header .nav1 {
+    display: flex; /* Ensure links are always visible on larger screens */
+    position: static; /* Reset position to static */
+    flex-direction: row; /* Horizontal layout for links */
+  }
+
+  header .burger-menu {
+    display: none; /* Hide burger menu on larger screens */
+  }
+}

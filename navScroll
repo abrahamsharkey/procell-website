@@ -1,0 +1,13 @@
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.querySelector(".navbar"); // Target the navbar
+  
+    // Add scroll event listener
+    document.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        navbar.classList.add("dimmed");
+      } else {
+        navbar.classList.remove("dimmed");
+      }
+    });
+  });   
